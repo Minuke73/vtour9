@@ -1,0 +1,42 @@
+﻿<krpano>
+ 
+	<style name="custom_hotspotstyle" url="vtourskin_hotspot_point.png" edge="top" distorted="true"
+	       tooltip="false"
+	       linkedscene=""
+	       linkedscene_lookat=""
+	       depth="1000"
+	       scale="1"
+	       onover.addevent="tween(scale,0.8);"
+	       onout.addevent="tween(scale,0.7);" 
+	       />
+
+	<style name="custom_hotspotext" type="text" autoalpha="false" alpha="1" bgcolor="0xffffff" bgroundedge="6" 
+		css="font-family:Noto Sans KR;font-size:30px;color:#000;font-weight:600;"
+		shadow="2.0"
+       shadowrange="4.0"
+       shadowangle="45"
+       shadowcolor="0x000000"
+       shadowalpha="0.5" padding="0 10 10 10"/> 
+	   
+	<style name="custom_hotspotext2" type="text" autoalpha="false" alpha="1" bg="false" bgcolor="transparent"
+		css="font-style: italic; font-family:Noto Sans KR; font-size:26px; color:#ffffff; font-weight:400;"
+		shadow="0"
+		enabled="false"
+        padding="10"
+		bgborder=""
+		bgshadow=""
+		/>
+
+	<action name="skin_hotspotstyle_setup" scope="local">
+		if(isvalue(caller.linkedscene) AND skin_settings.tooltips_hotspots,
+			copy(caller.tooltip, scene[get(caller.linkedscene)].title);
+			caller.loadstyle(skin_tooltips);
+		);
+	</action>
+
+	<action name="custom_hotspotstyle_click" scope="local">
+		js( modalclick(get(caller.linkmodal));  );
+	</action>
+	
+
+</krpano>

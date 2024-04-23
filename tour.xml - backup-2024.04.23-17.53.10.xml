@@ -1,0 +1,61 @@
+﻿<krpano version="1.20.11" title="">
+
+	<include url="skin/vtourskin.xml" />
+	<include url="skin/customskin.xml" />
+
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+	
+	<scene name="scene_87-1" title="근대 역사 마을 풍경" onstart="" thumburl="panos/87-1.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-187.079" vlookat="65.416" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/87-1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/87-1.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1664,3200,6400" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" rotate="-175" ath="99.287" atv="61.311" distorted="false" zoom="false" linkedscene="scene_87-9" linkedscene_hoffset="180.0" use3dtransition="true" />
+		<hotspot type="image" name="spot3" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="108.970" atv="58.449" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
+		<hotspot name="text" style="custom_hotspotext"  html="펭귄 마을 골목 " ath="-14.738" atv="3.404" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />		
+
+
+	</scene>
+
+	<scene name="scene_87-9" title="펭귄 마을" onstart="" thumburl="panos/87-9.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-45.180" vlookat="3.816" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/87-9.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/87-9.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1664,3200,6400" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" rotate="-175" ath="-17.100" atv="21.693" distorted="false" zoom="false" linkedscene="scene_87-1" linkedscene_hoffset="180.0" use3dtransition="true" />
+
+
+	</scene>
+
+
+</krpano>
