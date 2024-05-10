@@ -33,7 +33,7 @@
 			<cube url="panos/87-1.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1664,3200,6400" />
 		</image>
 
-		<hotspot name="spot1" style="skin_hotspotstyle" rotate="0" ath="105" atv="58" distorted="false" zoom="false" linkedscene="scene_87-9" />
+		<hotspot name="spot1" style="skin_hotspotstyle" rotate="0" ath="105" atv="58" distorted="false" zoom="true" linkedscene="scene_87-9" />
 		<hotspot type="image" name="spot3" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="115" atv="54" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
 		<hotspot name="text" style="custom_hotspotext"  html="펭귄 마을 " ath="122" atv="50" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />		
 
