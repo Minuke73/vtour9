@@ -21,7 +21,7 @@
 		if(startactions !== null, startactions() );
 	</action>
 	
-	<scene name="scene_87-1" title="근대 역사 마을 풍경" onstart="" thumburl="panos/87-1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_87-1" title="양림 역사 마을 풍경" onstart="" thumburl="panos/87-1.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -33,9 +33,9 @@
 			<cube url="panos/87-1.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1664,3200,6400" />
 		</image>
 
-		<hotspot name="spot1" style="skin_hotspotstyle" rotate="175" ath="100" atv="60" distorted="false" zoom="false" linkedscene="scene_87-9" linkedscene_hoffset="180.0" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" rotate="0" ath="105" atv="58" distorted="false" zoom="false" linkedscene="scene_87-9" />
 		<hotspot type="image" name="spot3" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="115" atv="54" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
-		<hotspot name="text" style="custom_hotspotext"  html="펭귄 마을 골목 " ath="122" atv="50" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />		
+		<hotspot name="text" style="custom_hotspotext"  html="펭귄 마을 " ath="122" atv="50" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />		
 
 
 	</scene>
@@ -52,7 +52,7 @@
 			<cube url="panos/87-9.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1664,3200,6400" />
 		</image>
 
-		<hotspot name="spot1" style="skin_hotspotstyle" rotate="175" ath="-50.959" atv="-27.984" distorted="false" zoom="false" linkedscene="scene_87-1" linkedscene_hoffset="180.0" use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" rotate="0" ath="-50" atv="-30" distorted="false" zoom="false" linkedscene="scene_87-1" linkedscene_hoffset="180.0" use3dtransition="true" />
 
 
 	</scene>
