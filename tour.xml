@@ -21,7 +21,7 @@
 		if(startactions !== null, startactions() );
 	</action>
 	
-	<scene name="scene_87-1" title="양림 역사 마을 풍경" onstart="" thumburl="panos/87-1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_87-1" title="양림 역사 문화 마을" onstart="" thumburl="panos/87-1.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
